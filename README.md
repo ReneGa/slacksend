@@ -14,7 +14,7 @@ Install [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) o
 
 ## Example usage
 
-### MacOs
+### Mac
 
 ```Bash
 ./slacksend --secret=<secret> --channel "alerts" --text="this message is sent by sendslack."
