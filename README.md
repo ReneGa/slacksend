@@ -14,13 +14,13 @@ Install [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) o
 #### Mac
 
 ```Bash
-./slacksend --secret=<secret> --channel "alerts" --text="this message is sent by sendslack."
+./slacksend --secret=<secret> --channel "alerts" --text="this message is sent by slacksend."
 ```
 
 #### Windows
 
 ```PowerShell
-.\slacksend.exe --secret=<secret> --channel "alerts" --text="this message is sent by sendslack."
+.\slacksend.exe --secret=<secret> --channel "alerts" --text="this message is sent by slacksend."
 ```
 
 ### Flags
