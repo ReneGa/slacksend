@@ -37,8 +37,7 @@ func TestGenerateBody(t *testing.T) {
 		// Then
 		bodyExpected := testCase.bodyExpected
 		if bodyResult != bodyExpected {
-			fmt.Printf("%s != %s", bodyResult, bodyExpected)
-			t.Fail()
+			t.Errorf("%s != %s", bodyResult, bodyExpected)
 		}
 	}
 }
