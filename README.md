@@ -2,10 +2,15 @@
 
 Send messages to an incoming webhook via the command line. Useful if you want to automatically send messages via [Slack](https://slack.com).
 
+## Installation
+
+Download your release (Mac or Windows): https://github.com/ReneGa/slacksend/releases
+
+(If you have Go installed, you can also run `go get )
+
 ## Setup
 
 Install [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) on your Slack workspace.
-
 
 ## Usage
 
