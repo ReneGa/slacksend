@@ -1,6 +1,6 @@
 # slacksend
 
-Send messages to an incoming webhook via the command line. Useful if you want to automatically send messages via Slack.
+Send messages to an incoming webhook via the command line. Useful if you want to automatically send messages via [Slack](https://slack.com).
 
 ## Setup
 
