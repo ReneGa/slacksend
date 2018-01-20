@@ -4,9 +4,15 @@ Send messages to an incoming webhook via the command line. Useful if you want to
 
 ## Installation
 
-Download your release (Mac or Windows): https://github.com/ReneGa/slacksend/releases
+Download the latest release (Mac or Windows): https://github.com/ReneGa/slacksend/releases
 
-(If you have Go installed, you can also run `go get )
+If you have [Go](https://golang.org/) installed, you can also use `go get`.
+
+```sh
+go get github.com/ReneGa/slacksend
+```
+
+This downloads and compiles the latest source and installs the binary.
 
 ## Setup
 
