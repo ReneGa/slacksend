@@ -1,9 +1,9 @@
 package payload_test
 
 import (
-	"fmt"
-	"slacksend/payload"
 	"testing"
+
+	"github.com/ReneGa/slacksend/payload"
 )
 
 func TestGenerateBody(t *testing.T) {

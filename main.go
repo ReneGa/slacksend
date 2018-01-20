@@ -3,9 +3,10 @@ package main
 import (
 	"flag"
 	"log"
-	"slacksend/flags"
-	"slacksend/payload"
-	"slacksend/slack"
+
+	"github.com/ReneGa/slacksend/flags"
+	"github.com/ReneGa/slacksend/payload"
+	"github.com/ReneGa/slacksend/slack"
 )
 
 func main() {
