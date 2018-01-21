@@ -2,14 +2,14 @@ package slack
 
 import (
 	"fmt"
-	"net/http"
 	"net/url"
 )
 
-// Send makes a request to Slack's webhook API (see https://api.slack.com/incoming-webhooks)
-func Send(secret, body string) (*http.Response, error) {
+// Request returns the URL and body to use for sending an http request to Slack's incoming webhook
+func Request(secret, body string) (string, url.Values) {
 	slackURL := fmt.Sprintf("https://hooks.slack.com/services/%s", secret)
-	return http.PostForm(slackURL, url.Values{
+	formData := url.Values{
 		"payload": []string{body},
-	})
+	}
+	return slackURL, formData
 }

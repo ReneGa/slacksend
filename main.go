@@ -4,6 +4,8 @@ import (
 	"flag"
 	"log"
 
+	"net/http"
+
 	"github.com/ReneGa/slacksend/flags"
 	"github.com/ReneGa/slacksend/payload"
 	"github.com/ReneGa/slacksend/slack"
@@ -27,13 +29,13 @@ func main() {
 	flag.Parse()
 	flags.AssertRequired(requiredFlags)
 
-	// Make request to Slack's webhook API
 	payloadJSON := payload.GenerateBody(payload.MessageParams{
 		Channel:  *channelFlag,
 		Username: "slacksend",
 		Text:     textFlag.Value,
 	})
-	_, err := slack.Send(secretFlag.Value, payloadJSON)
+
+	_, err := http.PostForm(slack.Request(secretFlag.Value, payloadJSON))
 	if err != nil {
 		log.Fatal(err)
 	}
