@@ -1,6 +1,7 @@
 # slacksend
 
-Send messages to an incoming webhook via the command line. Useful if you want to automatically send messages via [Slack](https://slack.com).
+Send messages to an incoming webhook via the command line.
+Useful if you want to automate sending messages via [Slack](https://slack.com).
 
 ## Installation
 
@@ -36,6 +37,6 @@ Install [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) o
 
 ### Flags
 
-- secret: Get your `<secret>` from the [API Guide](https://api.slack.com/incoming-webhooks). It's the part behind "services/" in `https://hooks.slack.com/services/<secret>`.
-- channel: Optional. If not set, messages will be sent to channel `general`.
-- text: the message's text
+- `secret`: Get your `<secret>` from the [API Guide](https://api.slack.com/incoming-webhooks). It's the part behind "services/" in `https://hooks.slack.com/services/<secret>`.
+- `channel`: Optional. If not set, messages will be sent to channel `general`.
+- `text`: the message's text
