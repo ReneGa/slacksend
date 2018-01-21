@@ -3,22 +3,6 @@
 Send messages to an incoming webhook via the command line.
 Useful if you want to automate sending messages via [Slack](https://slack.com).
 
-## Installation
-
-Download the latest release (Windows, Mac or Linux): https://github.com/ReneGa/slacksend/releases
-
-If you have [Go](https://golang.org/) installed, you can also use `go get`.
-
-```sh
-go get github.com/ReneGa/slacksend
-```
-
-This downloads and compiles the latest source and installs the binary.
-
-## Setup
-
-Install [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) on your Slack workspace.
-
 ## Usage
 
 ### Examples
@@ -40,3 +24,18 @@ Install [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) o
 - `secret`: Get your `<secret>` from the [API Guide](https://api.slack.com/incoming-webhooks). Format: `T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX`
 - `channel`: Optional. If not set, messages will be sent to channel `general`. `#` prefix is optional.
 - `text`: the message's text
+## Installation
+
+Download the latest release (Windows, Mac or Linux): https://github.com/ReneGa/slacksend/releases
+
+If you have [Go](https://golang.org/) installed, you can also use `go get`.
+
+```sh
+go get github.com/ReneGa/slacksend
+```
+
+This downloads and compiles the latest source and installs the binary.
+
+## Setup
+
+Install [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) on your Slack workspace.
