@@ -41,3 +41,21 @@ func TestGenerateBody(t *testing.T) {
 		}
 	}
 }
+
+func TestGenerateBodyDoNotAddHashSignIfGiven(t *testing.T) {
+	// Given
+	messageParams := payload.MessageParams{
+		Channel:  "#testChannel",
+		Username: "testUser",
+		Text:     "another sample message",
+	}
+
+	// When
+	bodyResult := payload.GenerateBody(messageParams)
+
+	// Then
+	bodyExpected := `{"channel":"#testChannel","username":"testUser","text":"another sample message"}`
+	if bodyResult != bodyExpected {
+		t.Errorf("%s != %s", bodyResult, bodyExpected)
+	}
+}

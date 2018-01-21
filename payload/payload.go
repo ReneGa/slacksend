@@ -3,6 +3,7 @@ package payload
 import (
 	"encoding/json"
 	"log"
+	"strings"
 )
 
 // MessageParams represent the JSON fields required by Slacks API for sending messages
@@ -15,7 +16,10 @@ type MessageParams struct {
 // GenerateBody returns MessageParams marshaled to JSON
 func GenerateBody(params MessageParams) string {
 
-	params.Channel = "#" + params.Channel
+	channel := &params.Channel
+	if !strings.HasPrefix(*channel, "#") {
+		*channel = "#" + (*channel)
+	}
 
 	j, err := json.Marshal(params)
 	if err != nil {

@@ -38,5 +38,5 @@ Install [Incoming WebHook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) o
 ### Flags
 
 - `secret`: Get your `<secret>` from the [API Guide](https://api.slack.com/incoming-webhooks). Format: `T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX`
-- `channel`: Optional. If not set, messages will be sent to channel `general`.
+- `channel`: Optional. If not set, messages will be sent to channel `general`. `#` prefix is optional.
 - `text`: the message's text
