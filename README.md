@@ -31,7 +31,7 @@ Download the latest release (Windows, Mac or Linux): https://github.com/ReneGa/s
 If you have [Go](https://golang.org/) installed, you can also use `go get`.
 
 ```sh
-go get github.com/ReneGa/slacksend
+go get -u github.com/ReneGa/slacksend
 ```
 
 This downloads and compiles the latest source and installs the binary.
