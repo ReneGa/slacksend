@@ -21,7 +21,7 @@ Useful if you want to automate sending messages via [Slack](https://slack.com).
 
 ### Flags
 
-- `secret`: Get your `<secret>` from the [API Guide](https://api.slack.com/incoming-webhooks). Format: `T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX`
+- `secret`: The secret part of your Incoming Webhook URL. You can get it from the [API Guide](https://api.slack.com/incoming-webhooks). Format: `T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX`
 - `channel`: Optional. If not set, messages will be sent to channel `general`. `#` prefix is optional.
 - `text`: the message's text
 ## Installation
